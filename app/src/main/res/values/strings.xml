@@ -2,4 +2,6 @@
     <string name="app_name">Jokes API F95107</string>
     <string name="joke_placeholder">Placeholder for Joke API</string>
     <string name="login">Login / Register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

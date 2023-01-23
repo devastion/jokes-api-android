@@ -4,57 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginRegisterActivity">
+    tools:context=".LoggedIn">
 
-    <EditText
-        android:id="@+id/loginName"
+    <TextView
+        android:id="@+id/logged_in_joke_field"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logged_in_refresh_joke"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginTop="128dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName"
+        android:text="REFRESH JOKE"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="LabelFor" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/loginPass"
+    <TextView
+        android:id="@+id/logged_in_greetings"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginTop="32dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="Enter pass"
-        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginName"
-        tools:ignore="LabelFor" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/loginBtn"
+        android:id="@+id/logged_in_save_joke"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginTop="32dp"
-        android:text="Login"
+        android:text="SAVE THE JOKE"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginPass" />
+        app:layout_constraintTop_toBottomOf="@+id/logged_in_refresh_joke" />
 
     <Button
-        android:id="@+id/registerBtn"
+        android:id="@+id/logged_in_view_saved_jokes"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="24dp"
-        android:text="Register"
+        android:layout_marginTop="32dp"
+        android:text="VIEW SAVED JOKES"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/logged_in_save_joke" />
 </androidx.constraintlayout.widget.ConstraintLayout>
