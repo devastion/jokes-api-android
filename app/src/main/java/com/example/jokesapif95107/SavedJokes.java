@@ -26,11 +26,6 @@ public class SavedJokes extends AppCompatActivity {
         ArrayList<String> savedJokes = usersDBHelpers.getUserSavedJokes(userName);
         String[] arraySavedJokes = savedJokes.toArray(new String[0]);
 
-
-
-
-
-
         simpleListView = (ListView) findViewById(R.id.simpleListView);
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
